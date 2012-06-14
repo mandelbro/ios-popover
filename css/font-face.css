@@ -1,0 +1,64 @@
+/* @license
+ * MyFonts Webfont Build ID 2309402, 2012-06-14T00:53:25-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Novecento Wide Bold by Synthview
+ * URL: http://www.myfonts.com/fonts/synthview/novecento/wide-bold/
+ * Licensed pageviews: unlimited
+ *
+ * Webfont: Novecento Wide Light by Synthview
+ * URL: http://www.myfonts.com/fonts/synthview/novecento/wide-light/
+ * Licensed pageviews: unspecified
+ *
+ * Webfont: Novecento Wide DemiBold by Synthview
+ * URL: http://www.myfonts.com/fonts/synthview/novecento/wide-demibold/
+ * Licensed pageviews: unspecified
+ *
+ * Webfont: Novecento Wide Book by Synthview
+ * URL: http://www.myfonts.com/fonts/synthview/novecento/wide-book/
+ * Licensed pageviews: unspecified
+ *
+ * Webfont: Novecento Wide Normal by Synthview
+ * URL: http://www.myfonts.com/fonts/synthview/novecento/wide-normal/
+ * Licensed pageviews: unspecified
+ *
+ * Webfont: Novecento Wide Medium by Synthview
+ * URL: http://www.myfonts.com/fonts/synthview/novecento/wide-medium/
+ * Licensed pageviews: unspecified
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2309402
+ * Webfonts copyright: Copyright &#x00A9; 2011 by Jan Tonellato. All rights reserved.
+ *
+ * © 2012 Bitstream Inc
+*/
+
+ @font-face {font-family: 'Novecentowide-Bold';src: url('webfonts/233D1A_0_0.eot');src: url('webfonts/233D1A_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/233D1A_0_0.woff') format('woff'),url('webfonts/233D1A_0_0.ttf') format('truetype');}
+
+
+ @font-face {font-family: 'Novecentowide-Light';src: url('webfonts/233D1A_1_0.eot');src: url('webfonts/233D1A_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/233D1A_1_0.woff') format('woff'),url('webfonts/233D1A_1_0.ttf') format('truetype');}
+
+
+ @font-face {font-family: 'Novecentowide-DemiBold';src: url('webfonts/233D1A_2_0.eot');src: url('webfonts/233D1A_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/233D1A_2_0.woff') format('woff'),url('webfonts/233D1A_2_0.ttf') format('truetype');}
+
+
+ @font-face {font-family: 'Novecentowide-Book';src: url('webfonts/233D1A_3_0.eot');src: url('webfonts/233D1A_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/233D1A_3_0.woff') format('woff'),url('webfonts/233D1A_3_0.ttf') format('truetype');}
+
+
+ @font-face {font-family: 'Novecentowide-Normal';src: url('webfonts/233D1A_4_0.eot');src: url('webfonts/233D1A_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/233D1A_4_0.woff') format('woff'),url('webfonts/233D1A_4_0.ttf') format('truetype');}
+
+
+ @font-face {font-family: 'Novecentowide-Medium';src: url('webfonts/233D1A_5_0.eot');src: url('webfonts/233D1A_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/233D1A_5_0.woff') format('woff'),url('webfonts/233D1A_5_0.ttf') format('truetype');}
+
+@font-face {
+	font-family: 'Pictos';
+	src: url('webfonts/pictos-web.eot');
+	src: local('☺'), url('webfonts/pictos-web.woff') format('woff'), url('webfonts/pictos-web.ttf') format('truetype'), url('webfonts/pictos-web.svg#webfontIyfZbseF') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iOS Style Popovers</title>
+
+		<!-- Apple web app meta tags -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+		<link rel="apple-touch-icon" href="images/app-icon-57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/app-icon-72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/app-icon-144.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/app-icon-144.png">
+		<!-- load stylesheets -->
+		<link href="css/reset.css" media="all" rel="stylesheet" type="text/css">
+		<link href="css/font-face.css" media="all" rel="stylesheet" type="text/css">
+		<link href="css/ios.css" media="all" rel="stylesheet" type="text/css">
+		<link href="css/styles.css" media="all" rel="stylesheet" type="text/css">
+		<!-- load library js -->
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/popover.js" type="text/javascript"></script>
+
+	</head>
+	<body>
+		<div id="page">
+			<h1 id="page-header" class="demi">iOS Popovers made with CSS</h1>
+			<p class="page-text">
+				Recently, I was building a mobile web application slated for the iOS platform
+				when I came across a problem. There was a native iOS feature that I wanted to use,
+				but couldn't find a way to implement natively in the mobile browser.
+			</p>
+			<p class="page-text">
+				The feature in question was the blue <a href="http://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/Popovers.html">popover menu</a> used by native apps to organize
+				menu options and other modular content. The links below are examples of what I'm
+				talking about.
+			</p>
+			<p class="page-text">
+				<a class="example-link" href="http://cl.ly/3e3l0I1o0A0k302B3D0y">Flipboard</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="example-link" href="http://cl.ly/3s2P243C293Y422W0f0W">Mobile Safari</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="example-link" href="http://cl.ly/2G3Q0Y0u452a09062f23">Penultimate</a>
+			</p>
+			<p class="page-text">
+				Naturally, I turned to my confidant and mentor <a href="http://google.com/">Google</a>
+				for council, but disappointingly, I was turned away. The closest I could find to
+				the feature in question was the way the html select element is implemented in Safari,
+				but that seemed hackish, and lacked many of the features I was after, like
+				title, navigation, action buttons, etc.
+			</p>
+			<p class="page-text">
+				<a class="example-link" href="http://cl.ly/033B1T1V0d2K400l1g2p">Less than ideal HTML Select Element</a>
+			</p>
+			<p class="page-text">
+				Most people would have thrown their hands up and quit, or found a shortcut to accomplish
+				the same goal but with less glossy iOS perfection. Not me, I'm an asshole, and I decided
+				to spend some time building out the feature with javascript and CSS. While there are still
+				many javascript features still in the works, the basic HTML and CSS structure are provided
+				in the source files for you to start playing with. Bust out your iPad or Xcode's iPad
+				simulator to check out the demo below!
+			</p>
+			<div id="page-demo">
+				<a rel="#popover-photos" id="page-demo-link" href="#" class="launch-ios-popover medium animate">Demo</a>
+				<div id="popover-photos" class="ios-popover">
+					<header class="ios-popover-header">
+						<p>Photo Albums</p>
+						<span class="ios-popover-arrow"></span>
+					</header>
+					<section class="ios-popover-section scroll-col">
+						<ul>
+							<li class="photo-list-item"><span class="pictos">P</span><a href="#">Profile Photos</a><span class="photo-count">8</span></li>
+							<li class="photo-list-item"><span class="pictos">P</span><a href="#">Vacation Photos</a><span class="photo-count">122</span></li>
+							<li class="photo-list-item"><span class="pictos">P</span><a href="#">Instagram Photos</a><span class="photo-count">238</span></li>
+							<li class="photo-list-item"><span class="pictos">P</span><a href="#">What happened last night?</a><span class="photo-count">14</span></li>
+							<li class="photo-list-item"><span class="pictos">P</span><a href="#">Cat Photos</a><span class="photo-count">999+</span></li>
+						</ul>
+					</section>
+				</div>
+				<p class="page-text close-text">
+					Visit the <a href="https://github.com/mandelbro/ios-popover">project page on GitHub</a> to get started, and follow me on twitter (<a href="http://twitter.com/chrismontes">@chrismontes</a>) for more updates.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

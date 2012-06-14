@@ -1,0 +1,288 @@
+
+.ios-arrow-left {
+    display : block;
+    position:absolute;
+    z-index : 0;
+    left:50px;
+    top:50px;
+    height:30px;
+    width:auto;
+    padding: 0 10px 0 6px;
+
+    background-repeat:repeat-x;
+    -webkit-background-size : 30px;
+    background-position :0;
+    background-image : -webkit-linear-gradient(
+        bottom,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 50%,
+        rgba(255,255,255,0.1) 50%,
+        rgba(255,255,255,0.3) 100%
+        );
+
+    -webkit-border-radius: 5px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+
+    -webkit-box-shadow :0 -1px 1px rgba(0,0,0,0.2)inset,
+        0 1px 2px rgba(0,0,0,0.8)inset;
+
+    font-weight: bold;
+    font-size : 12px;
+    line-height : 30px;
+    text-align:center;
+    color:#fff;
+    text-shadow : 0px -1px 0px rgba(0,0,0,0.8);
+}
+
+.ios-arrow-left:before{
+    position:absolute;
+    content : ' ';
+    left:-8px;
+    top:3.5px;
+    height : 24px;
+    width: 24px;
+    z-index : 1;
+
+    background-repeat:repeat-x;
+    -webkit-background-size : 20px 20px;
+    background-position :-1px -0.5px;
+    background-image :
+        -webkit-gradient(linear, left bottom, right top,
+            from(rgba(0,0,0,0)),
+            color-stop(0.5, rgba(0,0,0,0)),
+            color-stop(0.5, rgba(255,255,255,0.1)),
+            to(rgba(255,255,255,0.3)));
+
+
+    -webkit-transform : rotate(-45deg) skew(-10deg, -10deg);
+
+    -webkit-border-top-right-radius : 10px;
+    -webkit-border-top-left-radius :0px;
+    -webkit-border-bottom-right-radius : 0px;
+    -webkit-border-bottom-left-radius : 10px;
+
+    border-left : 1.5px solid rgba(255,255,255,0.4);
+
+    box-shadow :  1px 1px 1px rgba(0,0,0,0.4) inset,
+        -1px 1px 1px rgba(0,0,0,0.5) inset;
+
+    -webkit-mask-image :
+        -webkit-gradient(linear, left top, right bottom,
+            from(#000000),
+            color-stop(0.4,#000000),
+            color-stop(0.5, transparent),
+            to(transparent));
+}
+.ios-arrow-left,
+.ios-arrow-left:before {
+    background-color: rgba(74,108,155,1);/*hovercolor*/
+
+}
+
+.ios-arrow-left.over,
+.ios-arrow-left.over:before {
+    background-color: rgba(54,88,135,1);/*hovercolor*/
+
+}
+
+/* -----------------------------------------------------
+	iOS Popover Replica
+	Chris Montes
+	<http://twitter.com/chrismontes>
+
+	Hat-tip to:
+	Brett Terpstra 2012
+	<http://brettterpstra.com>
+----------------------------------------------------- */
+
+
+/* -----------------------------------------------------
+		Primary box styling
+	----------------------------------------------------- */
+
+.ios-popover {
+	position: absolute;
+	width: 412px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	font-family: "Helvetica Neue";
+	-webkit-box-shadow: 0 10px 45px 0px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,.5);
+	background: rgba(0,15,46,.94);
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.8);
+	/* force hardware acceleration */
+	-webkit-transform:translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-transition: opacity .3s ease-out;
+	opacity: 1;
+}
+
+/* -----------------------------------------------------
+		Set default max heights for landscape and portrait.
+		These will likely need to be set when the popover
+		is deployed
+	----------------------------------------------------- */
+.landscape .ios-popover {
+	max-height: 600px;
+}
+
+.portrait .ios-popover {
+	max-height: 800px
+
+}
+
+.ios-popover p {
+	display: block;
+	font-size: 14px;
+}
+
+.ios-popover ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ios-popover li {
+	border-bottom: 1px solid rgba(0,0,0, .2);
+	padding: 15px;
+	margin: 0 15px;
+	line-height: 1.6em;
+}
+
+.ios-popover li:last-child {
+	border-bottom: none;
+}
+
+/* -----------------------------------------------------
+	Header Section, includes the header text and nav
+	or other action elements (see iOS button styles)
+----------------------------------------------------- */
+.ios-popover-header {
+	height: 43px;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.44) 0%,rgba(255,255,255,0.09) 47%,rgba(255,255,255,0) 48%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, rgba(255,255,255,0.44) 0%,rgba(255,255,255,0.09) 47%,rgba(255,255,255,0) 48%,rgba(255,255,255,0) 100%); /* W3C */
+	-webkit-border-radius: 6px 6px 0 0;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.15);
+	position: relative;
+}
+
+	.ios-popover-header p {
+		text-align: center;
+		font-size: 2.2em;
+		font-weight: bold;
+		text-shadow: 0 0 1px rgba(0,0,0,1);
+		color: #fff;
+		position: relative;
+		z-index: 0;
+		line-height: 43px;
+	}
+
+/* -----------------------------------------------------
+	Header Section, includes the header text and nav
+	or other action elements (we'll use with ios button
+	styles)
+----------------------------------------------------- */
+.ios-popover-section {
+	margin: 0 6px 6px;
+	background: #fcfcfc;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,.4), inset 0 2px 3px rgba(0,0,0,.43), inset 0 -1px 0 rgba(0,0,0,.15);
+	box-shadow: 0 0 1px rgba(0,0,0,.4), inset 0 2px 3px rgba(0,0,0,.43), inset 0 -1px 0 rgba(0,0,0,.15);
+}
+
+/* -----------------------------------------------------
+	Arrows
+----------------------------------------------------- */
+
+.ios-popover-arrow {
+	width: 24px;
+	height: 24px;
+	-webkit-transform: rotate(45deg);
+	-webkit-transform-origin: 100%;
+	position: absolute;
+	left: 50%;
+	top: -4px;
+	display: block;
+	border-left: 1px solid rgba(0,0,0,.8);
+	border-top: 1px solid rgba(0,0,0,.8);
+	margin-left: -17px;
+	background: rgba(10,24,54,1) -webkit-linear-gradient(-45deg, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.43) 50%,rgba(255,255,255,0.42) 47%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background-clip: padding-box;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.15);
+	-webkit-mask-image :
+	-webkit-gradient(linear, left top, right bottom,
+		from(black),
+		color-stop(0.55,black),
+		color-stop(0.55, transparent),
+		to(transparent));
+}
+
+/*
+.ios-popover-arrow:after {
+	background: rgba(0,0,0,.8);
+}
+
+.ios-popover-arrow:after {
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 28px;
+	-webkit-transform: rotate(45deg);
+}
+
+.north .ios-popover-arrow,
+.south .ios-popover-arrow {
+	display: block;
+	width: 28px;
+	height: 18px;
+	left: 50%;
+	margin-left: -18px;
+}
+
+.north .ios-popover-arrow {
+	top: -18px;
+	left: 50%;
+	margin-left: -13px;
+}
+.north .ios-popover-arrow:after {
+	top: 10px;
+}
+
+.south .ios-popover-arrow {
+	bottom: -18px;
+}
+
+.south .arrow:after {
+	bottom: 10px;
+}
+
+.east .ios-popover-arrow,
+.west .ios-popover-arrow {
+	display: block;
+	width: 18px;
+	height: 28px;
+	top: 55%;
+}
+
+.east .ios-popover-arrow {
+	right: 13px;
+	margin-top: -18px;
+	right: -18px;
+}
+
+.east .ios-popover-arrow:after {
+	right: 10px;
+}
+
+.west .ios-popover-arrow {
+	margin-top: -18px;
+	left: -18px;
+}
+
+.west .ios-popover-arrow:after {
+	left: 10px;
+}
+*/

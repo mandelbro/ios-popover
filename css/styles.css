@@ -1,0 +1,151 @@
+
+/**
+ * styles.css
+ * general stylesheet for the application
+ */
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Georgia, "times new roman", times, serif;
+	font-size: .625em;
+	position: absolute;
+	background: #f7f7f5 url('../images/texture-bg.png');
+	color: #6c727f;
+}
+
+.pictos {
+	font-family: Pictos;
+}
+
+.animate {
+	-webkit-transform:translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+	#page {
+		min-height: 100%;
+		width: 728px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.bold {
+		font-family: Novecentowide-Bold;
+		font-weight: normal;
+	}
+
+	.demi {
+		font-family: Novecentowide-DemiBold;
+		font-weight: normal;
+	}
+
+	.medium {
+		font-family: Novecentowide-Medium;
+		font-weight: normal;
+	}
+
+	.normal {
+		font-family: Novecentowide-Book;
+		font-weight: normal;
+	}
+
+	.book {
+		font-family: Novecentowide-Book;
+		font-weight: normal;
+	}
+
+	.light {
+		font-family: Novecentowide-Book;
+		font-weight: normal;
+	}
+
+	#page-header {
+		font-size: 6em;
+		padding: 100px 0 60px
+	}
+
+	.page-text {
+		font-size: 2.8em;
+		padding-bottom: 40px;
+		line-height: 36px;
+	}
+
+	#page-demo {
+		padding-bottom: 100px;
+		text-align: center;
+	}
+
+		#page-demo-link {
+			padding: 15px 25px;
+			text-align: center;
+			font-size: 3em;
+			-webkit-border-radius: 6px;
+			border: 1px solid transparent;
+			background-clip: padding-box;
+		}
+
+		#page-demo-link:hover {
+			text-decoration: none;
+		}
+
+		#page-demo-link.active {
+			background: #d9d9d9;
+			-webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.1);
+			border: 1px solid rgba(255,255,255,.4);
+		}
+
+		#page-demo .ios-popover {
+			left: 50%;
+			margin-left: -206px;
+			margin-top: 20px;
+			text-align: left;
+		}
+
+		#page-demo .ios-popover-section {
+			max-height: 283px;
+			overflow-y: auto;
+		}
+
+		#page-demo .close-text {
+			margin-top: 400px;
+		}
+
+		/* popover list styles */
+		#page-demo .photo-list-item {
+			height: 40px;
+			position: relative;
+		}
+
+			#page-demo .photo-list-item .pictos {
+				font-size: 2.8em;
+				line-height: 45px;
+				color: #383838;
+			}
+
+			#page-demo .photo-list-item a {
+				font-size: 1.8em;
+				font-weight: bold;
+				color: #383838;
+				padding: 0 20px;
+			}
+
+			#page-demo .photo-list-item a:hover {
+				text-decoration: none;
+			}
+
+			#page-demo .photo-list-item .photo-count {
+				font-size: 1.2em;
+				font-weight: bold;
+				color: #383838;
+				background: bfbfbf;
+				float: right;
+				display: block;
+				padding: 5px 12px;
+				margin: 10px 0;
+			}
+
+
+
+
